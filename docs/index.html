@@ -4,15 +4,51 @@
 <head>
   <meta charset="UTF-8" />
   
+  <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <script>
+    const gifs = [
+      "assets/img/ded.gif",
+      "assets/img/yay.gif",
+      "assets/img/angel.gif"
+    ]
+
+    window.addEventListener('load', ev => {
+      document.getElementById("footer-gif").src = gifs[Math.floor(Math.random() * gifs.length)]
+    })
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
-  <link rel="stylesheet" href="/assets/index.76972a2e.css">
+  <link rel="stylesheet" href="/assets/index.b0b657d6.css">
 </head>
 
 <body>
-  <h1 class="text-1xl md:text-5xl text-gray-500 text-center font-semibold mx-auto">
-    Hello, orb.
-  </h1>
+  <div class="flex flex-col items-center justify-center h-screen gap-2">
+    <a class="btn btn-lg bg-[#002336] gap-2 w-72" href="https://thunderstore.io/c/peglin">
+      <img src="/assets/thunderstore.83230df6.png" class="h-6 w-6">
+      Download mods
+    </a>
+
+    <a class="btn btn-lg bg-[#5865F2] gap-2 w-72 text-gray-900" href="https://discord.com/invite/42J42fdc">
+      <span class="iconify h-6 w-6" data-icon="fa-brands:discord"></span>
+      Modding discord
+    </a>
+
+    <a class="btn btn-lg bg-[#5865F2] gap-2 w-72 text-gray-900" href="https://discord.com/invite/8DTD27NZVh">
+      <span class="iconify h-6 w-6" data-icon="fa-brands:discord"></span>
+      Game discord
+    </a>
+
+    <a class="btn btn-lg gap-2 w-72" href="https://github.com/Peglin-Modding">
+      <span class="iconify h-6 w-6" data-icon="fa:github"></span>
+      Github
+    </a>
+
+    <div class="max-w-72">
+      <div class="divider">
+        <img id="footer-gif" src="data:image/gif;base64,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">
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
